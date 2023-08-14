@@ -151,36 +151,36 @@
 
             }
 
-            // const customerEdit = () => {
-            //     let fullName = document.querySelector('#modalEdit #fullName').value;
-            //     let email = document.querySelector('#modalEdit #email').value;
-            //     let phone = document.querySelector('#modalEdit #phone').value;
-            //     let address = document.querySelector('#modalEdit #address').value;
-            //     let iD = document.querySelector('#modalEdit #id').value;
-            //     customers[iD-1].fullName = fullName;
-            //     customers[iD-1].email = email;
-            //     customers[iD-1].phone = phone;
-            //     customers[iD-1].address = address;
-            //     getAllCustomer();
-            // }
+            const customerEdit = () => {
+                let fullName = document.querySelector('#modalEdit #fullName').value;
+                let email = document.querySelector('#modalEdit #email').value;
+                let phone = document.querySelector('#modalEdit #phone').value;
+                let address = document.querySelector('#modalEdit #address').value;
+                let iD = document.querySelector('#modalEdit #id').value;
+                customers[iD-1].fullName = fullName;
+                customers[iD-1].email = email;
+                customers[iD-1].phone = phone;
+                customers[iD-1].address = address;
+                getAllCustomer();
+            }
 
-            // const customerCreate = () => {
-            //     let fullName = document.querySelector('#modalCreate #fullName').value;
-            //     let email = document.querySelector('#modalCreate #email').value;
-            //     let phone = document.querySelector('#modalCreate #phone').value;
-            //     let address = document.querySelector('#modalCreate #address').value;
-            //     let iD = customers.length + 1;
-            //     customers.push({
-            //         "id": iD,
-            //         "fullName": fullName,
-            //         "email": email,
-            //         "phone": phone,
-            //         "address": address,
-            //         "balance": 0,
-            //         "deleted": 0
-            //     })
-            //     getAllCustomer();
-            // }
+            const customerCreate = () => {
+                let fullName = document.querySelector('#modalCreate #fullName').value;
+                let email = document.querySelector('#modalCreate #email').value;
+                let phone = document.querySelector('#modalCreate #phone').value;
+                let address = document.querySelector('#modalCreate #address').value;
+                let iD = customers.length + 1;
+                customers.push({
+                    "id": iD,
+                    "fullName": fullName,
+                    "email": email,
+                    "phone": phone,
+                    "address": address,
+                    "balance": 0,
+                    "deleted": 0
+                })
+                getAllCustomer();
+            }
 
         </script>
 
